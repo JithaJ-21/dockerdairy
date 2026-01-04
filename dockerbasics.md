@@ -85,33 +85,7 @@ Hello from Dockerfile
 
 ## Docker Architecture
 
-+------------------------+
-|      Host Computer     |  <- Your real OS (Windows/Linux/Mac)
-|  CPU | RAM | Disk | OS |
-+------------------------+
-          |
-          v
-+------------------------+
-|     Docker Engine      |  <- Docker Daemon + CLI
-|  (Manages containers)  |
-+------------------------+
-          |
-   ------------------
-   |                |
-   v                v
-+----------+    +------------+
-|  Image   | -> | Container  |  <- Running instance of image
-+----------+    +------------+
-     |                 |
-     |             +----------------+
-     |             | Volumes (Data) |  <- Persistent storage
-     |             +----------------+
-     |                 |
-     |             +----------------+
-     |             | Network        |  <- Containers communicate
-     |             +----------------+
-
-
+![dock](https://github.com/JithaJ-21/dockerdairy/blob/main/image.png?raw=true)
 
 The CLI sends commands → Daemon executes them → Containers/images created/managed.
 
@@ -135,7 +109,7 @@ The CLI sends commands → Daemon executes them → Containers/images created/ma
 
 So, even if the container is deleted, the data stays.
 
-By default, containers are ephemeral — any changes vanish when stopped. Volumes allow persistence.
+By default, containers are ephemeral — any changes vanish when stopped. Volumes allow persistence. 
 
 #### Docker Comppose
 
