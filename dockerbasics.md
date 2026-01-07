@@ -90,7 +90,7 @@ Hello from Dockerfile
 The CLI sends commands → Daemon executes them → Containers/images created/managed.
 
 ## Networking & Volumes
-#### Docker Networking
+### Docker Networking
 * Docker provides isolated virtual networks for containers.
 * Bridge (default): Containers on the same host communicate.
 * Host: Container shares host network stack.
@@ -100,7 +100,7 @@ The CLI sends commands → Daemon executes them → Containers/images created/ma
 
       docker run -d --name web --network mynet nginx
 
-#### Docker Volumes
+### Docker Volumes
 * Used for persistent storage.
 * Example: (in bash)
 
@@ -111,7 +111,7 @@ So, even if the container is deleted, the data stays.
 
 By default, containers are ephemeral — any changes vanish when stopped. Volumes allow persistence. 
 
-#### Docker Comppose
+### Docker Compose
 
 Docker Compose is a tool for defining and running multi-container applications. Instead of running docker run multiple times for each container, you can define all services, networks, and volumes in a single YAML file and start them with one command.
 
