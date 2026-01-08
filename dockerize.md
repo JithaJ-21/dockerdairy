@@ -13,13 +13,13 @@
 * Purpose:
 1) Verify that Docker is installed and running on the system.
 * Observation:
-1) Docker CLI responded with the installed version (e.g., Docker version 24.x).
+1) Docker CLI responded with the installed version (e.g., Docker version 28.4.0).
 
 ----
 
 ### Step 3: Create Dockerfile for Backend
 
-File: Dockerfile inside project folder (dockerize)
+File: Dockerfile inside project folder
 
 Content:
 
@@ -40,7 +40,7 @@ Content:
 -----
 
 ### Step 4: Build Backend Docker Image
-* Command: ***docker build -t resource-library .**8
+* Command: ***docker build -t resource-library .***
 * Purpose:
 1) Build the Docker image named resource-library from the Dockerfile.
 * Observation:
@@ -54,7 +54,7 @@ Content:
 1) See all existing containers (running or stopped).
 2) Identify any leftover containers from previous runs.
 * Observation:
-1) Multiple old containers were present (suspicious_solomon, old backend).
+1) Multiple old containers were present (old backend etc.).
 
 -----
 
